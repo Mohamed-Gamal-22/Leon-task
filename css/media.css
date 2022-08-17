@@ -1,0 +1,111 @@
+@media screen and (max-width: 850px) {
+  header .links i {
+    display: block;
+  }
+
+  header .links ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .land h1 {
+    font-size: 60px;
+  }
+  .land p {
+    font-size: 17px;
+  }
+  /* ////////////////// */
+  .feat .container {
+    flex-wrap: wrap;
+  }
+  .feat .container .cont {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .feat .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .feat .container .cont {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #444;
+    border: 1px solid chocolate;
+    padding: 25px;
+    border-radius: 15px;
+  }
+  h2.special {
+    font-size: 80px;
+  }
+  h2.special + p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .serv .container .all .col:last-of-type {
+    display: none;
+  }
+  .serv .container .all .col {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  /* ////////////////////////////////// */
+  .port .container .all {
+    flex-wrap: wrap;
+  }
+  .port .container .all .col {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .serv .container .all .col {
+    width: 100%;
+  }
+  .serv .container .all {
+    flex-wrap: wrap;
+  }
+
+  .serv .container .all .col .none {
+    border: 1px solid #09c;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  /* ////////////////////////// */
+  .port .container .all {
+    flex-wrap: wrap;
+  }
+  .port .container .all .col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .about .all .image,
+  .about .all .text {
+    width: 100%;
+  }
+  .about .all .image {
+    margin-bottom: 60px;
+  }
+  .about .all .text {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact .info .label,
+  .contact .info .link {
+    font-size: 27px;
+  }
+}

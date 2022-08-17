@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* start main componant */
+.special {
+  color: #ebeceb;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px;
+  letter-spacing: -6px;
+}
+.special + p {
+  margin-top: -50px;
+  text-align: center;
+  font-size: 20px;
+  color: #444;
+}
+/* end main componant */
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* start header */
+
+header {
+  padding: 15px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/pexels-tranmautritam-251225.jpg");
+  height: 80vh;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  color: #444;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 70px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+header .links i {
+  font-size: 25px;
+  transition: 0.5s;
+  display: none;
+  color: #fff;
+}
+
+header .links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .links ul li {
+  margin-left: 25px;
+  list-style: none;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 10px;
+}
+header .links ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header .links ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #09c;
+  transition: 0.4s;
+}
+header .links ul li:hover::after {
+  width: 100%;
+}
+
+/* //////////////////////////////// */
+
+.land {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 85%;
+  margin: auto;
+}
+.land h1 {
+  font-size: 90px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.land p {
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 1.7;
+}
+
+/* end header */
+/* start features*/
+.feat {
+  background-color: #fff;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.feat .container {
+  display: flex;
+  justify-content: space-between;
+}
+.feat .container .cont {
+  width: 32%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #444;
+  border: 1px solid #09c;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+.feat .container .cont:hover {
+  box-shadow: 3px 3px 8px #09c, -3px -3px 8px #09c;
+}
+.feat .container .cont i {
+  font-size: 35px;
+  color: #09c;
+  margin-bottom: 20px;
+}
+.feat .container .cont h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.feat .container .cont p {
+  line-height: 1.7;
+}
+/* end features*/
+
+/* start serv */
+.serv {
+  padding: 30px 0;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+}
+
+.serv .container .all {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.serv .container .all .col {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.serv .container .all .col .none {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.serv .container .all .col i {
+  color: #09c;
+  font-size: 28px;
+  margin-right: 35px;
+  margin-top: 8px;
+}
+.serv .container .all .col .cont h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.serv .container .all .col .cont p {
+  color: #888;
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+.serv .container .all .col:last-of-type {
+  height: 380px;
+  background-color: #09c;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.serv .container .all .col:last-of-type p {
+  position: relative;
+  padding-bottom: 15px;
+}
+.serv .container .all .col:last-of-type p::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* end serv*/
+
+/* //////////////////////////////////////////////////// */
+
+/* start portfolio */
+.port {
+  margin-top: 50px;
+  padding: 40px 0;
+  text-transform: capitalize;
+}
+.port .container .all {
+  display: flex;
+  justify-content: space-between;
+  flex: wrap;
+}
+.port .container .all .col {
+  width: 32%;
+  margin-top: 50px;
+
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.port .container .all .col img {
+  width: 100%;
+}
+.port .container .all .col h3 {
+  margin: 15px 0;
+}
+.port .container .all .col p {
+  line-height: 1.6;
+}
+/* end portfolio */
+/* start about */
+.about {
+  background-color: #fafafa;
+  padding: 25px 0;
+  text-transform: capitalize;
+}
+
+.about .all {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .all .image,
+.about .all .text {
+  width: 48%;
+}
+.about .all .image {
+  position: relative;
+  z-index: 1;
+}
+.about .all .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about .all .text p {
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #444;
+}
+/* end about */
+/* start contact */
+.contact {
+  padding: 60px 0;
+  background-color: #fff;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.contact .info {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact .info .label {
+  font-size: 35px;
+  font-weight: 800;
+  color: #09c;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.contact .info .link {
+  display: block;
+  font-size: 35px;
+  font-weight: 800;
+  color: #444;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.contact .info .social {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.contact .info .social i {
+  margin-left: 10px;
+  color: #09c;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* end contact */
+/* start footer */
+footer {
+  background-color: #09c;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+footer span {
+  color: #444;
+  font-weight: bold;
+}
+/* end footer */
